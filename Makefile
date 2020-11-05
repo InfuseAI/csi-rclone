@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-VERSION=$(shell cat VERSION)
-REGISTRY_NAME=wunderio
+VERSION=$(shell git describe --tags )
+REGISTRY_NAME=infuseai
 IMAGE_NAME=csi-rclone
 IMAGE_TAG=$(REGISTRY_NAME)/$(IMAGE_NAME):$(VERSION)
 

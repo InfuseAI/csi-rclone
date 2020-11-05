@@ -229,7 +229,7 @@ func Mount(remote string, remotePath string, targetPath string, flags map[string
 	defaultFlags["cache-info-age"] = "72h"
 	defaultFlags["cache-chunk-clean-interval"] = "15m"
 	defaultFlags["dir-cache-time"] = "5s"
-	defaultFlags["vfs-cache-mode"] = "writes"
+	defaultFlags["vfs-cache-mode"] = "off"
 	defaultFlags["allow-non-empty"] = "true"
 	defaultFlags["allow-other"] = "true"
 
